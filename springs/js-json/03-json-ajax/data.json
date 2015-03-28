@@ -1,0 +1,11 @@
+dataHandler ({
+	"full_name":"Mauricio Bayuelo",
+	"tittle ":	"web & design",
+	"links"	:	[
+		{"url":"http://maubayuelo.com"},
+		{"fb":"https://www.facebook.com/mau.bayuelo"},
+		{"linkedIn" : "https://www.linkedin.com/in/maubayuelo"},
+		{"twitter": "https://twitter.com/maubayuelo"},
+		{"dribbble":"https://dribbble.com/maubayuelo"}		
+	]
+});

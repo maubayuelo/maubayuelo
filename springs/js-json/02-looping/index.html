@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<meta charset="utf-8"/>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
+
+</head>
+<body>
+	<h2>
+		Links
+	</h2>
+	<div id='links'>
+	</div>
+	<script>
+		var info ={
+			"full_name":"Mauricio Bayuelo",
+			'tittle' :"web & design",
+			'links'	:{
+				"url":"http://maubayuelo.com",
+				"fb":"https://www.facebook.com/mau.bayuelo",
+				"linkedIn" : "https://www.linkedin.com/in/maubayuelo",
+				"twitter": "https://twitter.com/maubayuelo",
+				"dribbble":"https://dribbble.com/maubayuelo"
+			}
+		}
+		var output ="";
+		for(key in info.links){
+			if (info.links.hasOwnProperty(key)){
+				output += '<li>'+
+				'<a href = "'+ info.links[key]+'">'+key+'</a>'+
+				'</li>';
+			}
+		}
+		
+		var update = document.getElementById("links");
+		update.innerHTML = output
+	</script>
+</body>
+</html>

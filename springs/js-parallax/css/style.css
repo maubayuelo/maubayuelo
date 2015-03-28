@@ -1,0 +1,190 @@
+html,body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+}
+
+.navigation {
+	position: fixed;
+	z-index: 1;
+	top: 20px;
+}
+
+.navigation li {
+	color: #eee;
+	display: block;
+	padding: 10px 20px;
+	line-height: 20px;
+	margin-bottom: 2px;
+	font-weight: bold;
+	-webkit-transition: all .1s ease-in-out;
+	border-bottom: 1px solid #eee;
+	text-align: left;
+	text-transform: uppercase;
+	width: 53px;
+}
+
+.navigation li:hover,
+.active {
+	font-size: 25px;
+	cursor: pointer;
+	width: 100px!important;
+}
+
+.le_logo {
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	margin-top: -41px;
+	margin-left: -223px;
+	z-index: 1;
+	background:none;
+}
+
+.slide {
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+
+.wrapper {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.slideno {
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	font-size: 100px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.3);
+}
+
+.button {
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	background-color: #333333;
+	background-image: url(../images/arrow.png);
+	background-repeat: no-repeat;
+}
+
+.button:hover {
+	background-color: #494949;
+	cursor: pointer;
+}
+
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1 {
+	background-color: #999;
+	background-image: url(http://s3.matthewlang.co.uk/2014/fixie-friday-trophy-bike.jpg);
+}
+/******************************
+ SLIDE 2 
+*******************************/
+#slide2 {
+	background-color: #999;
+	background-image: url(http://24.media.tumblr.com/tumblr_lxqqefWU3U1qc8b04o1_1280.jpg);
+}
+
+#slide2 img:first-child {
+	position: absolute;
+	top: 600px;
+	left:  15%;
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+}
+
+#slide2 img:nth-child(2) {
+	position: absolute;
+	top: 170px;
+	left: 25%;
+}
+
+#slide2 img:nth-child(3) {
+	position: absolute;
+	top: 500px;
+	left: 45%;
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+}
+
+#slide2 img:nth-child(4) {
+	position: absolute;
+	top: 150px;
+	right: 50%;
+}
+
+#slide2 img:nth-child(5) {
+	position: absolute;
+	top: 150px;
+	right: 30%;
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+}
+/****************************** SLIDE 3 *******************************/ 
+#slide3 {
+	background-color: #999;
+	background-image: url(http://www.wobalong.com/wp-content/uploads/2013/02/324061_394386320622991_25729969_o.jpg);
+}
+
+#slide3 img:first-child {
+	position: absolute;
+	top: 700px;
+	left:  15%;
+}
+
+#slide3 img:nth-child(2) {
+	position: absolute;
+	top: 100px;
+	left: 25%;
+}
+
+#slide3 img:nth-child(3) {
+	position: absolute;
+	top: 550px;
+	left: 45%;
+}
+
+#slide3 img:nth-child(4) {
+	position: absolute;
+	top: 50px;
+	right: 45%;
+}
+
+#slide3 img:nth-child(5) {
+	position: absolute;
+	top: 600px;
+	right: 20%;
+}
+/******************************
+ SLIDE 4 
+*******************************/
+#slide4 {
+	background-color: #999;
+	background-image: url(http://www.yesbikes.com.au/media/catalog/product/cache/1/image/1555x1037/9df78eab33525d08d6e5fb8d27136e95/y/e/yes_fixie_bike_mk2_silver_side_brakeless3_1_2_1_1_1_1_1_1_1_1.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#slide4 .parallaxbg {
+	position: absolute;
+	right: 40px;
+	top: 40px;
+	font-size: 28px;
+	color: rgba(51,51,51,0.3);
+}

@@ -1,0 +1,191 @@
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP1 START @ 03:07:42
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+VERSION:	0.5.12
+PHP:		5.5.12 | SAPI: apache2handler
+SERVER:		Apache/2.4.9 (Win32) PHP/5.5.12
+DOC ROOT:	C:/wamp/www/maubayuelo
+DOC ROOT 755:	true
+LOG FILE 644:	true
+BUILD NAME:	20150319_mauriciobayuelo_55114dc73554c4762150324114303
+REQUEST URL:	http://localhost/maubayuelo/installer.php
+
+********************************************************************************
+ARCHIVE SETUP
+********************************************************************************
+NAME:	20150319_mauriciobayuelo_55114dc73554c4762150324114303_archive.zip
+SIZE:	106.42MB
+ZIP:	Enabled (ZipArchive Support)
+EXTRACTING
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 11795
+    [filename] => C:\wamp\www\maubayuelo\20150319_mauriciobayuelo_55114dc73554c4762150324114303_archive.zip
+    [comment] => 
+)
+COMPLETE: true
+
+WEB SERVER CONFIGURATION FILE RESET:
+- Backup of .htaccess/web.config made to .orig
+- Reset of .htaccess/web.config files
+
+UPDATED FILES:
+- SQL FILE:  'C:/wamp/www/maubayuelo/installer-data.sql'
+- WP-CONFIG: 'C:/wamp/www/maubayuelo/wp-config.php'
+
+ARCHIVE RUNTIME: 330.7291 sec.
+
+
+********************************************************************************
+DATABASE-ROUTINES
+********************************************************************************
+--------------------------------------
+SERVER ENVIROMENT
+--------------------------------------
+MYSQL VERSION:	5.6.17
+TIMEOUT:	5000
+MAXPACK:	1048576
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+ERRORS FOUND:	0
+DROP TABLE:	
+QUERIES RAN:	6799
+
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_duplicator_packages: (1)
+wp_eg_grids: (2)
+wp_eg_item_elements: (1)
+wp_eg_item_skins: (45)
+wp_eg_navigation_skins: (8)
+wp_icl_cms_nav_cache: (0)
+wp_icl_content_status: (0)
+wp_icl_core_status: (0)
+wp_icl_flags: (63)
+wp_icl_languages: (63)
+wp_icl_languages_translations: (3969)
+wp_icl_locale_map: (2)
+wp_icl_message_status: (0)
+wp_icl_node: (0)
+wp_icl_reminders: (0)
+wp_icl_string_positions: (0)
+wp_icl_string_status: (0)
+wp_icl_string_translations: (0)
+wp_icl_strings: (24)
+wp_icl_translate: (232)
+wp_icl_translate_job: (50)
+wp_icl_translation_status: (17)
+wp_icl_translations: (74)
+wp_links: (0)
+wp_new_royalsliders: (6)
+wp_options: (336)
+wp_postmeta: (1254)
+wp_posts: (454)
+wp_term_relationships: (52)
+wp_term_taxonomy: (14)
+wp_terms: (14)
+wp_usermeta: (30)
+wp_users: (1)
+wp_wprc_cached_requests: (9)
+wp_wprc_extension_types: (2)
+wp_wprc_extensions: (23)
+wp_wprc_repositories: (5)
+wp_wprc_repositories_relationships: (6)
+Removed '84' cache/transient rows
+
+SECTION RUNTIME: 27.8886 sec.
+
+********************************************************************************
+STEP1 COMPLETE @ 03:13:40 - TOTAL RUNTIME: 358.6427 sec.
+********************************************************************************
+
+
+
+********************************************************************************
+DUPLICATOR INSTALL-LOG
+STEP2 START @ 03:14:03
+NOTICE: Do not post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	latin1
+CHARSET CLIENT:	 utf8 
+
+--------------------------------------
+SERIALIZER ENGINE
+[*] scan every column
+[~] scan only text columns
+[^] no searchable columns
+--------------------------------------
+wp_commentmeta^ (0)
+wp_comments^ (0)
+wp_duplicator_packages^ (0)
+wp_eg_grids~ (2)
+wp_eg_item_elements~ (1)
+wp_eg_item_skins~ (45)
+wp_eg_navigation_skins~ (8)
+wp_icl_cms_nav_cache^ (0)
+wp_icl_content_status^ (0)
+wp_icl_core_status^ (0)
+wp_icl_flags~ (63)
+wp_icl_languages~ (63)
+wp_icl_languages_translations~ (3969)
+wp_icl_locale_map~ (2)
+wp_icl_message_status^ (0)
+wp_icl_node^ (0)
+wp_icl_reminders^ (0)
+wp_icl_string_positions^ (0)
+wp_icl_string_status^ (0)
+wp_icl_string_translations^ (0)
+wp_icl_strings~ (24)
+wp_icl_translate~ (232)
+wp_icl_translate_job~ (50)
+wp_icl_translation_status~ (17)
+wp_icl_translations~ (74)
+wp_links^ (0)
+wp_new_royalsliders~ (6)
+wp_options~ (250)
+wp_postmeta~ (1254)
+wp_posts~ (454)
+wp_term_relationships~ (52)
+wp_term_taxonomy~ (14)
+wp_terms~ (14)
+wp_usermeta~ (30)
+wp_users~ (1)
+wp_wprc_cached_requests~ (9)
+wp_wprc_extension_types~ (2)
+wp_wprc_extensions~ (23)
+wp_wprc_repositories~ (5)
+wp_wprc_repositories_relationships~ (6)
+--------------------------------------
+SEARCH1:	'http://maubayuelo.com' 
+REPLACE1:	'http://localhost/maubayuelo' 
+SEARCH2:	'/home/content/b/a/b/babarcartagena/html/' 
+REPLACE2:	'C:/wamp/www/maubayuelo/' 
+SCANNED:	Tables:40 | Rows:6670 | Cells:37511 
+UPDATED:	Tables:4 | Rows:495 |Cells:791 
+ERRORS:		1 
+RUNTIME:	21.747200 sec
+====================================
+DATA-REPLACE ERRORS (Serialization):
+SELECT request_data FROM `wp_wprc_cached_requests`  WHERE id = "186";
+
+
+********************************************************************************
+START FINAL CLEANUP: 03:14:25
+********************************************************************************
+UPDATE `wp_blogs` SET domain = 'localhost' WHERE domain = 'maubayuelo.com'
+
+--------------------------------------
+WARNINGS
+--------------------------------------
+WP-CONFIG WARNING: The wp-config.php has one or more of these values "WP_CONTENT_DIR, WP_CONTENT_URL, WPCACHEHOME, COOKIE_DOMAIN, WP_SITEURL, WP_HOME, WP_TEMP_DIR" which may cause issues please validate these values by opening the file.
+
+WEB SERVER CONFIGURATION FILE BASIC SETUP:
+created basic .htaccess file.  If using IIS web.config this process will need to be done manually.
+********************************************************************************
+STEP 2 COMPLETE @ 03:14:25 - TOTAL RUNTIME: 22.0773 sec.
+********************************************************************************
