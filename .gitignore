@@ -3,6 +3,7 @@
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
+installer.php
 /pluradical
 /white-bay
 wp-content/advanced-cache.php
